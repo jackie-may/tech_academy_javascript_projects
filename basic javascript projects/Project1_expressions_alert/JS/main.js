@@ -8,3 +8,7 @@ var mom = mom.fontcolor("pink");	//assigning the font color pink to the variable
 var daughter = daughter.fontcolor("orange");	//assigning the font color orange to the variable daughter
 
 document.write (family + " have " + (1+1+1) + " people in their family." + "Their names are " + dad + ", " + mom + ", and " + daughter + ".");	//asking index.html to display the variable family, perform the expression 1+1+1, and concatenate the several parts
+
+function displayDate() {
+	document.getElementById("demo").innerHTML = result;
+}
