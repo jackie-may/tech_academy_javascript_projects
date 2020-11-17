@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript ternary operators constructors</title>
+		<link rel="" type="" href="">
+	</head>
+	<body>
+
+		<!--ternary operators example 1-->
+		<p>Riders must be at least 52 centimeters tall to ride</p>
+		<input id="Height" value="52" />
+		<button onclick="ternaryFunction1()">click here to see if you are tall enough to ride the ride</button>
+		<p id="Ride"></p>
+
+
+		<!--ternary operators example 2-->
+		<p>riders must be at least 18 years old to vote</p>
+		<input id="Age" value="18" />
+		<button onclick="ternaryFunction2()">click here to see if you are old enough to vote</button>
+		<p id="Vote"></p>
+
+
+		<!--this example is showing us that some keywords can not be used as variables because they have specific actions or meanings-->
+		<button onclick="myFunction1()">click here to see what kind of car erik drives</button>
+		<p id="Keywords_and_Constructors"></p>
+
+
+		<!--this example is using the same variables as above from the related js doc but we are getting an output for 'jackie' this time.-->
+		<button onclick="myFunction2()">click here to see what kind of car jackie drives</button>
+		<p id="New_and_This"></p>
+
+
+		<!--the following is an exercise in assigning a variable a value of a reserved word "true"-->
+		<button onclick="myFunction3()">click here to see what kind of car true drives</button>
+		<p id="demo1"></p>
+
+
+		<!-- display constructor function for person objects -->
+		<p id="demo2"></p>
+
+		
+		<!-- nested function display-->
+		<p id="Nesting" onclick="Nested_Function()">click here to utilize a nested function</p>
+
+
+
+
+
+
+
+
+		<script src="JS/main.js"></script>
+
+	</body>
+</html>
