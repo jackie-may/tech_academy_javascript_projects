@@ -57,7 +57,7 @@ function ageFunction() {
 function Time_Function() {
 	var Time = new Date().getHours();
 	var reply;
-	if (Time > 12 == Time > 0) {
+	if (Time < 12 == Time > 0) {
 		reply = "it is morning time!";
 	}
 	else if (Time > 12 == Time < 18) {
@@ -66,5 +66,5 @@ function Time_Function() {
 	else {
 		reply = "it is evening time.";
 	}
-	document.getElementById("Time_of_day").innerhtml = reply;
+	document.getElementById("Time_of_the_day").innerHTML = reply;
 }
