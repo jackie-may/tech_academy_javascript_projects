@@ -85,6 +85,7 @@ document.getElementById("dogObject").innerHTML = dog.description();
 
 //javascript LOOP using a BREAK statement
 // a break statment "jumps out" of a loop
+//this loop jumps out and stops at 3
 var text = "";
 var i;
 for (i = 0; i < 10; i++) {
@@ -96,10 +97,11 @@ document.getElementById("demo1").innerHTML = text;
 
 //javascript LOOP using a CONTINUE statement
 // a continue statement 'jumps over' one iteration in the loop
+//this loop skips the number 3
 var text = "";
 var i;
 for (i = 0; i < 10; i++) {
 	if (i === 3) { continue; }
-	text += "THe number is " + i + "<br>";
+	text += "The number is " + i + "<br>";
 }
 document.getElementById("demo2").innerHTML = text;
