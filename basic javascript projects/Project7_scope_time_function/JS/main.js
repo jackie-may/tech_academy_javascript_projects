@@ -68,3 +68,13 @@ function Time_Function() {
 	}
 	document.getElementById("Time_of_the_day").innerHTML = reply;
 }
+
+
+//utilizing console.log for debugging purposes
+a = 5;
+b = 6;
+// c = a + d; //sends an alert we can only see in the console
+c = a + b; // this one works and sends no error to the console
+console.log(c)
+
+
