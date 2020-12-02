@@ -1,0 +1,83 @@
+#menuBG {
+	width:400px;
+	height:470px;
+	margin:10px auto;
+}
+
+#frmMenu {
+	width:600px;
+	height:200px;
+}
+
+/*this formats the total*/
+#totalPrice {
+	width:200px;
+	height:190px;
+	margin:20px auto;
+	float:right;
+}
+
+/*this will be used to push the size to the left*/
+.left {
+	width:200px;
+	height:200px;
+	float:left;
+}
+
+.center {
+	width:200px;
+	height:200px;
+	float:left;
+}
+
+/*this will be used to push the meats to the right side*/
+.right {
+	width:200px;
+	height:200px;
+	float:right;
+}
+
+#showText {
+	width:200px;
+	height:190px;
+	margin:0px auto;
+	float:left;
+}
+
+#cart {
+	top:0;
+	margin:0px auto;
+	width: 400px;
+	height:200px;
+}
+
+/*this customizes the place order button*/
+#btnOrder {
+	margin:10px 0px 0px 100px;
+	width:100px;
+	height:40px;
+	display: block;
+	margin: 25px auto;
+}
+
+/*this customizes the background color of the <body> element*/
+body {
+	background-color: aliceblue;
+}
+
+/*this customizes the <H1> element*/
+h1 {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: darkcyan;
+}
+
+/*this customizes the <h3> element*/
+h3 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: darkgoldenrod;
+}
+
+div {
+	font-family: 'Courier New', Courier, monospace;
+	color: darkred;
+}
