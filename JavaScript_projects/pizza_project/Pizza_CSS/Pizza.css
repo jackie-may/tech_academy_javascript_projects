@@ -6,7 +6,7 @@
 
 #frmMenu {
 	width:600px;
-	height:200px;
+	height:300px;
 }
 
 /*this formats the total*/
@@ -20,26 +20,26 @@
 /*this will be used to push the size to the left*/
 .left {
 	width:200px;
-	height:200px;
+	height:300px;
 	float:left;
 }
 
 .center {
 	width:200px;
-	height:200px;
+	height:300px;
 	float:left;
 }
 
 /*this will be used to push the meats to the right side*/
 .right {
 	width:200px;
-	height:200px;
+	height:300px;
 	float:right;
 }
 
 #showText {
 	width:200px;
-	height:190px;
+	height:200px;
 	margin:0px auto;
 	float:left;
 }
@@ -47,7 +47,7 @@
 #cart {
 	top:0;
 	margin:0px auto;
-	width: 400px;
+	width:400px;
 	height:200px;
 }
 
