@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+	</body>
+	<script>
+		//$ = jQuery
+		//using jQuery to target a dom element the html tag
+		//$(document).ready = when the document(page) is loaded in the browser
+		//function() = go ahead and run this function - grab the html tag and append the following information to be inside of it
+		$(document).ready(function() {
+			$("html").append ( 	//requesting the html tag
+			"<body>\
+				<div id='container'>\
+					<div id='inner'>\
+						<h1>basic jQuery</h1>\
+						<p id='1'>Paragraph 1</p>\
+						<p id='2'>Paragraph 2</p>\
+						<p id='3'>Paragraph 3</p>\
+						<h3>the end</h3>\
+					</div>\
+				</div>\
+			</body>"
+			);
+			// targeting the <p> element but if it was a class or an id we would put that (class or id)
+			$("#2").css({"color":"red"}); 
+			$("#3").click(function() {
+				$('h1').hide(); //targeting the h1 = $('h1') | and hiding it = .hide()
+			});
+			$("h3").click(function() { //step 309.1 challenge | onclick, 'click' loads in the console.log
+				console.log("click");
+			});
+			$("#1").hide("slow"); // step 309.2 challenge | will slowly hide paragraph 1
+
+		});
+
+
+
+	</script>
+
+
+</html>
