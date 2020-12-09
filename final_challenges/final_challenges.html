@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>final javascript challenges</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="final_challenges.css">
+	<script src=https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js></script>
+</head>
+	<body>
+		<script>
+		document.body.className += ' fade-out';
+
+		//jquery that will remove the fade out command once the page has loaded so that it does not go on for infinity
+		$(function() {
+			$('body').removeClass('fade-out');
+		});
+		</script>
+
+		<h1 style="font-size:8vw">howdy yall</h1>
+		<p style="font-size:2vw">everything is totally fine</p>
+
+		<br>
+
+		
+		<script>
+			// this is used to validate that the form has been filled out correctly
+			function validateForm() {
+				var x = document.forms["myForm"]["phone"].value;
+				if (x == "") {
+					alert("please fill the empty field");
+					return false;
+				}
+			}
+		</script>
+
+		<!-- a form that requires a phone number and uses javascript to alert the user if they have not filled out the form correctly-->
+		<h3>display a phone input field</h3>
+		<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+		<label for="phone">enter your digits:</label><br><br>
+		<input type="tel" id="phone" name="phone"><br><br>
+		<small>Format: 555-555-5555</small><br><br>
+		<input type="submit" value="submit">
+	</form>
+
+	<script src="final_challenges.js" defer></script>
+
+	</body>
+</html>
