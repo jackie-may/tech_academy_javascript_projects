@@ -7,40 +7,134 @@
 	<script src=https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js></script>
 </head>
 	<body>
-		<script>
-		document.body.className += ' fade-out';
 
-		//jquery that will remove the fade out command once the page has loaded so that it does not go on for infinity
-		$(function() {
-			$('body').removeClass('fade-out');
-		});
-		</script>
+		<ul>
+			<li><a href="#header">top</a></li>
+			<li><a href="#redbox">middle</a></li>
+			<li><a href="#popup form"> bottom</a></li>
+		</ul>
 
-		<h1 style="font-size:8vw">howdy yall</h1>
-		<p style="font-size:2vw">everything is totally fine</p>
+		<hr><!--horizontal rule tag-->
+
+
+		<section id="header">
+			<script>
+			document.body.className += ' fade-out';
+			//jquery that will remove the fade out command once the page has loaded so that it does not go on for infinity
+			$(function() {
+				$('body').removeClass('fade-out');
+			});
+			</script>
+
+
+			<h1 style="font-size:8vw">howdy yall</h1>
+			<p style="font-size:2vw">everything is totally fine</p>
+		</section>
 
 		<br>
 
-		
-		<script>
-			// this is used to validate that the form has been filled out correctly
-			function validateForm() {
-				var x = document.forms["myForm"]["phone"].value;
-				if (x == "") {
-					alert("please fill the empty field");
-					return false;
+		<!-- phone number form section-->
+		<section id="form">
+			<script>
+				// this is used to validate that the form has been filled out correctly
+				function validateForm() {
+					var x = document.forms["myForm"]["phone"].value;
+					if (x == "") {
+						alert("please fill the empty field");
+						return false;
+					}
 				}
-			}
-		</script>
+			</script>
+			<!-- a form that requires a phone number and uses javascript to alert the user if they have not filled out the form correctly-->
+			<h3>display a phone input field</h3>
+			<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+			<label for="phone">enter your digits:</label><br><br>
+			<input type="tel" id="phone" name="phone"><br><br>
+			<small>Format: 555-555-5555</small><br><br>
+			<input type="submit" value="submit">
+			</form>
+		</section>
+		<!-- /phone number form section-->
 
-		<!-- a form that requires a phone number and uses javascript to alert the user if they have not filled out the form correctly-->
-		<h3>display a phone input field</h3>
-		<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-		<label for="phone">enter your digits:</label><br><br>
-		<input type="tel" id="phone" name="phone"><br><br>
-		<small>Format: 555-555-5555</small><br><br>
-		<input type="submit" value="submit">
-	</form>
+
+		<!-- popup form section-->
+		<section id="popup form">
+			<button class="open-button" onclick="openForm()">Open form</button>
+			
+			<div class="form-popup" id="myForm">
+				<form action="/action_page.php" class="form-container">
+					<h1>my little pony</h1>
+
+					<label for ="email"><b>ponies</b></label>
+					<input type="text" placeholder="enter email" name="email" required>
+
+					<label for="psw"><b>magical powers</b></label>
+					<input type="text" placeholder="enter password" name="psw" required>
+
+					<button type="submit" class="btn"> login</button>
+					<button type="button" class="btn cancel" onclick="closeForm()">cancel</button>
+				</form>
+			</div>
+		</section>
+		<!-- /popup form section-->
+
+
+		<!--keyframes rule-->
+		<div id="redbox" style="padding-bottom:200px">
+		<div class="redbox">
+		</div>
+		</div>
+		<!-- /keyframes rule-->
+
+		<br><br>
+
+		<!-- zoom in and out on an image-->
+		<div>
+		<img class="zoomimage" src="images/img1.jpg" alt="sand dunes" width="500">
+		</div>
+		<!-- / end of zoom in and out on an image-->
+
+
+		<!-- very simple slideshow-->
+		<script>
+			$("#slideshow > div:gt(0)").hide();
+
+			setInterval(function() {
+				$('#slideshow > div:first')
+				.fadeOut(1000)
+				.next()
+				.fadeIn(1000)
+				.end()
+				.appendTo('#slideshow');
+			}, 3000);
+		</script>
+		<div id="slideshow">
+			<div>
+				<img src="images/img2.jpg">
+			</div>
+			<div>
+				<img src="images/img3.jpg">
+			</div>
+			<div>neato slide experience</div>
+		</div>
+		<!-- very simple slideshow-->
+
+		<!-- JSON.stringify() method-->
+		<p id="myDog"></p>
+
+		<!--JSON.parse() method-->
+		<p id="myDog2"></p>
+
+		<!--localStorage() method-->
+		<p id="myDog3"></p>
+		
+
+		<p id ="dblclick" ondblclick="myFunction()">some text here to experience the ondblclick() method</p>
+
+		
+
+
+
 
 	<script src="final_challenges.js" defer></script>
 

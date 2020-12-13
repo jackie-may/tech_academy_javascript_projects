@@ -1,0 +1,53 @@
+html {
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	text-align: center;
+}
+
+body {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/*input field styling*/
+input {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	width: 500px;
+	font-size: 2vw;
+	border: 1px solid green;
+	display: block;
+	margin: auto; /*auto aligning the margins centers the input field*/
+	text-align: justify;
+}
+
+input:focus {
+	outline: none;
+}
+
+
+li {
+	text-align: left;
+	font-size: 40px;
+	list-style: none;
+	margin: 0;
+}
+
+
+footer {
+	clear: both; /*prevents floating elements from right/left of the footer*/
+	position: relative;/* positions footer relative to other elements on the page*/
+	left: 0;
+	bottom: 0;
+	max-width: 100%;
+	background-color: lightcyan;
+	color: brown;
+	text-align: left;
+	z-index: 1; 
+	margin-top: 40em; /*moves footer to bottom of all elements*/
+	padding: 2vw;
+}
+/*this adds padding between items in the array after one has been deleted*/
+.remove {
+	padding-bottom: 5px;
+}
